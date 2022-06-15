@@ -1,1 +1,30 @@
 /* Styles here... */
+html, body{
+  margin: 0;
+  padding: 0;
+  background-color: #2F4F30;
+  color: white;
+}
+
+.title{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 1.8rem;
+}
+
+.my-card{
+  position: relative;
+  left: 5rem;
+  max-width: 9.5rem;
+  margin-left: -4.4rem;
+}
+
+#cpu-cards{
+  height: 15rem;
+}
+#player-cards{
+ height: 15rem;
+}
+
