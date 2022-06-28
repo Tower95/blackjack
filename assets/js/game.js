@@ -154,6 +154,7 @@ buttomHalt.addEventListener('click', () => {
 });
 
 buttomNew.addEventListener('click', () => {
+  console.clear();
   deck = [];
   createDeck()
   shuffle(deck);
@@ -163,4 +164,6 @@ buttomNew.addEventListener('click', () => {
   divCpuCards.innerHTML = "";
   cpuPoints = 0;
   playerPoints = 0;
+  points[1].innerText = playerPoints;
+  points[0].innerText = cpuPoints;
 });
