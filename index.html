@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
   <header class="title">Blackjack</header>
 
   <div class="row mt-2">
     <div class="col text-center">
       <button id="btnNew" class="btn btn-danger">New game</button>
-      <button id="btnDraw" class="btn btn-primary">Draw card</button>
-      <button id="btnHalt" class="btn btn-warning">Halt</button>
+      <button id="btnDraw" disabled="diasable" class="btn btn-primary">Draw card</button>
+      <button id="btnHalt" disabled="diasable" class="btn btn-warning">Halt</button>
     </div>
   </div>
 
@@ -23,9 +25,9 @@
     <div class="col">
       <h1>Player 1 - <span>0</span></h1>
 
-      <div id="player-cards">
+      <div id="player-cards" class="divCard">
         <!-- <img class="my-card" src="./assets/cards/2C.png" alt=""> -->
-       
+
       </div>
 
     </div>
@@ -33,18 +35,28 @@
     <div class="row container mt-2">
       <div class="col">
         <h1>CPU 1 - <span>0</span></h1>
-  
-        <div id="cpu-cards">
-          
+
+        <div id="cpu-cards" class="divCard">
+
         </div>
-  
+
       </div>
-  </div>
+    </div>
 
 
 
+    (
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="./assets/js/game.js"></script>
+    <script>
+      let newGameBtn = document.querySelector('#btnNew');
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> -->
-  <script src="./assets/js/game.js"></script>
+      newGameBtn.addEventListener('click', () => {
+        miModulo.newGame();
+      });
+
+      console.log(miModulo.newGame());
+    </script>
 </body>
+
 </html>
