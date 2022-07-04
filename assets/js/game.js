@@ -186,12 +186,6 @@ const miModulo = (() => {
     cpuTurn(playersPoints[0]);
   });
 
-  // buttomNew.addEventListener('click', () => {
-  //   console.clear();
-
-  //   startGame();
-
-  // });
 
   return {
     newGame : startGame 
